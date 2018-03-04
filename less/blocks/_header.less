@@ -1,0 +1,156 @@
+.bg-header {
+	height: 590px;
+	background-image: url('../images/bg/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+// NAVIGATION 
+
+.logo-holder {
+	margin-top: 65px;
+	margin-bottom: 45px;
+}
+
+
+.navigation-holder {
+	margin-bottom: 70px;
+
+	@media (max-width: 768px) {
+		display: block;
+		opacity: 0;
+		transition: .5s ease-out;
+		position: fixed;
+		left: 0px;
+		background-color: rgba(80, 195, 175, 0.95);
+	}
+
+	.navigation-list {
+		display: flex;
+		flex-direction: row;
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+
+
+		.list-item {
+			margin-right: 20px;
+			margin-left: 20px;
+
+			@media (max-width: 768px) {
+				margin: 45px 80px 25px 100px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-family: 'Open Sans', sans-serif;
+				font-size: 13px;
+				line-height: 24px;
+				text-transform: uppercase;
+				border: 0px solid #fff;
+				border-radius: 10px;
+				padding: 5px;
+				transition: .3s ease-out;
+					
+
+				&:hover {
+					background-color: #50c3af;
+					color: #fff;
+				}
+
+				&:active {
+					color: #50c3af;
+					background-color: #fff;
+				}
+				@media (max-width: 768px) {
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+			}
+
+		}
+	}
+}
+
+.mobile-open {
+	opacity: 1;
+}
+
+.show-navigation {
+	display: none;
+	color: #fff;
+
+	position: fixed;
+	left: 0;
+	
+	width: 50px;
+	height: 50px;
+	background: rgba(80, 195, 175, 0.5) url('../images/icon/icon-toggle-menu.png') no-repeat;
+
+	@media (max-width: 768px) {
+		display: block;
+	}
+}
+
+// HEADER
+
+.header {
+	margin-bottom: 105px;
+
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+
+		.heading-header {
+			font-family: Ubuntu, sans-serif;
+			font-size: 53px;
+			font-weight: bold;
+			color: #fff;
+			line-height: 60px;
+			text-transform: uppercase;
+			margin-bottom: 35px;
+			text-align: center;
+		}
+
+		.subtitle-header {
+			font-family: 'PT sans', sans-serif;
+			color: #fff;
+			font-size: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 80px;
+		}
+
+		.button-header {
+			text-decoration: none;
+			color: #f5f5f5;
+
+			font-family: 'PT sans', sans-serif;
+			font-size: 15px;
+			font-weight: bold;
+			text-transform: uppercase;
+
+			background-color: #50c3af;
+			border-radius: 60px;
+			padding: 15px 45px;
+
+			transition: .3s ease-out;
+
+			&:hover {
+				background-color: #fff;
+				color: #50c3af;
+			}
+
+			&:active {
+				background-color: #50c3af;
+				color: #fff;
+			}
+		}
+	}
+}
